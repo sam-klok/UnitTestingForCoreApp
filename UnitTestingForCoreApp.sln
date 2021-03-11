@@ -12,11 +12,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		ReadMe.txt = ReadMe.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestMSTest", "UnitTestMSTest\UnitTestMSTest.csproj", "{5380984D-9599-4DC3-8CC4-ABE9969BE6BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTestMSTest", "UnitTestMSTest\UnitTestMSTest.csproj", "{5380984D-9599-4DC3-8CC4-ABE9969BE6BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestProject1", "XUnitTestProject1\XUnitTestProject1.csproj", "{EAA7B593-002F-4D1E-8344-FCFE4123B52E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitTestProject", "XUnitTestProject1\XUnitTestProject.csproj", "{EAA7B593-002F-4D1E-8344-FCFE4123B52E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTestProject1", "NUnitTestProject1\NUnitTestProject1.csproj", "{773D0577-9DA8-4086-A680-DB970A8B9249}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NUnitTestProject1", "NUnitTestProject1\NUnitTestProject1.csproj", "{773D0577-9DA8-4086-A680-DB970A8B9249}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

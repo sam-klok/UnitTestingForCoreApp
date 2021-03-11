@@ -1,5 +1,9 @@
 I'm playing w unit tests. 
 
+MS Test		- ready.
+xUnit		- ready.
+nUnit		- not ready.
+
 Based on Pluralsight videos below:
 
 Testing .NET Code in Visual Studio 2019
