@@ -18,6 +18,7 @@ namespace XUnitTestProject1
         }
 
         [Fact]
+        [Trait("Category","Player Name")]
         public void CheckFullName()
         {
             var sut = new Player();
@@ -29,6 +30,8 @@ namespace XUnitTestProject1
 
         // something wrong here
         [Fact]
+        [Trait("Category", "Player Name")]
+
         public void CheckFullNameForNumbers()
         {
             var sut = new Player();
@@ -47,7 +50,7 @@ namespace XUnitTestProject1
             Assert.InRange(sut.Age(), 5, 110);
         }
 
-        [Fact]
+        [Fact(Skip ="Let's don't run it.")]
         public void CheckAgeExcessive()
         {
             var sut = new Player();
@@ -116,6 +119,19 @@ namespace XUnitTestProject1
 
 
             Assert.Throws<ArgumentNullException>(() => sut.CauseArgNulEx(null));
+        }
+
+        [Theory]
+        [InlineData(4)]
+        [InlineData(24)]
+        [InlineData(100)]
+        public void CheckAgeTheory(int age)
+        {
+            var sut = new PlayerExpert();
+            sut.age = age;
+
+
+            Assert.Equal(sut.age, age);
         }
     }
 }
