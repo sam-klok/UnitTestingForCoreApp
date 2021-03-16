@@ -21,11 +21,25 @@ namespace ClassLibraryCore
             return age;
         }
 
+        private IPlayerValidator playerValidator;
 
+        public Player()
+        { }
+
+        public Player(IPlayerValidator playerValidator)
+        {
+            this.playerValidator = playerValidator;
+        }
 
         public override int Skill()
         {
             return 0;
+        }
+
+        public bool Validate()
+        { 
+            var result = playerValidator.IsValid(this.Name);
+            return result;
         }
     }
 }

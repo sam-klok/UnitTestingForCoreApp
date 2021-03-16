@@ -2,6 +2,7 @@ using System;
 using Xunit;
 using ClassLibraryCore;
 using System.Collections.Generic;
+using Moq;
 
 
 namespace XUnitTestProject1
@@ -133,5 +134,6 @@ namespace XUnitTestProject1
 
             Assert.Equal(sut.age, age);
         }
+
     }
 }
