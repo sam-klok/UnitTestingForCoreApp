@@ -1,9 +1,9 @@
 using System;
-using Xunit;
 using ClassLibraryCore;
 using System.Collections.Generic;
 using Moq;
-
+using Xunit;
+using System.Security;
 
 namespace XUnitTestProject1
 {
@@ -135,5 +135,30 @@ namespace XUnitTestProject1
             Assert.Equal(sut.age, age);
         }
 
+
+        [Fact]
+        public void StringCompareTest()
+        {
+            string x = "Just string";
+            Assert.Equal("just string", x, ignoreCase: true);
+        }
+
+        [Fact]
+        public void HtmlStrings()
+        {
+            string x = "<html></html>";
+            Assert.Equal("<html></html>", x);
+        }
+
+
+        [Fact]
+        public void EscapeHtmlStrings()
+        {
+            string html = "<html></html>";
+            string escapedHtml = SecurityElement.Escape(html);
+            Assert.NotEqual(html, escapedHtml);
+            Assert.Equal("&lt;html&gt;&lt;/html&gt;", escapedHtml);
+
+        }
     }
 }
