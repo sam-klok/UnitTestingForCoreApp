@@ -406,3 +406,4 @@
 /.vs/UnitTestingForCoreApp/v16/TestStore/0/004.testlog
 /XUnitTestProject1/bin/Debug/net5.0/Castle.Core.dll
 *.dll
+*.exe
