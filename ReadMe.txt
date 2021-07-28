@@ -1,8 +1,9 @@
-I'm playing w unit tests. 
+I'm playing with unit tests under .Net Core v5.0
 
 MS Test		- ready.
 xUnit		- ready.
-Moq			- in progress.
+Moq		- in progress.
+
 nUnit		- not ready.
 
 Based on Pluralsight videos below:
@@ -20,4 +21,3 @@ C# Unit Testing with NUnit
 https://www.pluralsight.com/paths/c-unit-testing-with-nunit
 
 thank you
-serge klokov
